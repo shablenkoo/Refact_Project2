@@ -1,0 +1,6 @@
+qrcode==7.4.2
+pillow==10.2.0
+pytest==8.0.0
+pytest-cov==4.1.0
+opencv-python-headless==4.8.0.76
+pyzbar==0.1.9

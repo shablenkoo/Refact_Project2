@@ -1,0 +1,45 @@
+name: Advanced Quality Gate
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libzbar0
+
+      - name: Install Python Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Tests & Generate Reports
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd):$(pwd)/Refact_Project2
+          pytest --cov=src --cov-report=xml:coverage.xml --junitxml=report.xml --cov-report=html:htmlcov
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Quality-Reports-Package
+          path: |
+            htmlcov/
+            report.xml
+            coverage.xml
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
