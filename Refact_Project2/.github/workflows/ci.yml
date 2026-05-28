@@ -1,52 +1,47 @@
-name: Advanced Quality Gate
+name: Enterprise Quality Gate
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-and-test:
+    runs-on: self-hosted
+
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Важливо для аналізу SonarCloud
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Install System Dependencies
+      - name: Install Dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y libzbar0
+          pip install qrcode pillow pytest pytest-cov opencv-python-headless pyzbar
 
-      - name: Install Python Dependencies
+      - name: Run Tests & Generate Metrics
         run: |
-          pip install -r requirements.txt
-
-      - name: Run Tests & Generate Reports
-        run: |
-          # Налаштовуємо шляхи, щоб pytest бачив модулі в папці src
-          export PYTHONPATH=$PYTHONPATH:$(pwd):$(pwd)/Refact_Project2
+          # Використовуємо pytest для генерації XML звітів для Sonar та артефактів
           pytest --cov=src --cov-report=xml:coverage.xml --junitxml=report.xml --cov-report=html:htmlcov
 
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: Quality-Reports-Package
-          path: |
-            htmlcov/
-            report.xml
-            coverage.xml
-
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v3.0.0
+        uses: SonarSource/sonarqube-scan-action@v4.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=shablenkoo_Refact_Project2
             -Dsonar.organization=shablenkoo
+            -Dsonar.projectKey=shablenkoo_Refact_Project2
             -Dsonar.python.coverage.reportPaths=coverage.xml
             -Dsonar.python.xunit.reportPath=report.xml
+
+      - name: Upload Execution Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Quality-Execution-Results
+          path: |
+            htmlcov/
+            report.xml
+            coverage.xml
