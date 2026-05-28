@@ -2,6 +2,7 @@ __pycache__/
 .pytest_cache/
 htmlcov/
 .coverage
+actions-runner/
 coverage.xml
 report.xml
 venv/

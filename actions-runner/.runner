@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 21,
+  "agentName": "DESKTOP-LIFB9FK",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/2zbZ8p5HyVgYKDBnOcPTwAatHEHx6jTMsbiUttcEEUth2kXs5T/",
+  "gitHubUrl": "https://github.com/shablenkoo/Refact_Project2",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}

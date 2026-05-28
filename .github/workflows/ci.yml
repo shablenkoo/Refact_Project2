@@ -1,0 +1,47 @@
+name: Enterprise Quality Gate
+
+on: [push]
+
+jobs:
+  build-and-test:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          pip install qrcode pillow pytest pytest-cov opencv-python-headless pyzbar
+
+      - name: Run Tests & Generate Metrics
+        run: |
+          cd Refact_Project2 
+          pytest --cov=src --cov-report=xml:coverage.xml --junitxml=report.xml --cov-report=html:htmlcov
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarqube-scan-action@v4.1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.organization=shablenkoo
+            -Dsonar.projectKey=shablenkoo_Refact_Project2
+            -Dsonar.python.coverage.reportPaths=coverage.xml
+            -Dsonar.python.xunit.reportPath=report.xml
+
+      - name: Upload Execution Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Quality-Execution-Results
+          path: |
+            htmlcov/
+            report.xml
+            coverage.xml
