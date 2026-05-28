@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # Важливо для аналізу SonarCloud
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,6 +26,7 @@ jobs:
 
       - name: Run Tests & Generate Reports
         run: |
+          # Налаштовуємо шляхи, щоб pytest бачив модулі в папці src
           export PYTHONPATH=$PYTHONPATH:$(pwd):$(pwd)/Refact_Project2
           pytest --cov=src --cov-report=xml:coverage.xml --junitxml=report.xml --cov-report=html:htmlcov
 
@@ -39,7 +40,13 @@ jobs:
             coverage.xml
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
+        uses: SonarSource/sonarcloud-github-action@v3.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.projectKey=shablenkoo_Refact_Project2
+            -Dsonar.organization=shablenkoo
+            -Dsonar.python.coverage.reportPaths=coverage.xml
+            -Dsonar.python.xunit.reportPath=report.xml
