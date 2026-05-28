@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "shablenkoo/Refact_Project2",
+  "pipelineDirectory": "Refact_Project2",
+  "workspaceDirectory": "Refact_Project2\\Refact_Project2",
+  "repositories": {
+    "shablenkoo/Refact_Project2": {
+      "repositoryPath": "Refact_Project2\\Refact_Project2",
+      "lastRunOn": "05/28/2026 22:01:46 +03:00"
+    }
+  },
+  "lastRunOn": "05/28/2026 22:01:46 +03:00"
+}

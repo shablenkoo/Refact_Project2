@@ -1,0 +1,3173 @@
+[2026-05-28 19:01:46Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.credentials'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.runner'
+[2026-05-28 19:01:46Z INFO Worker] Version: 2.334.0
+[2026-05-28 19:01:46Z INFO Worker] Commit: f1995ede5d885c997d13d8eca5467c4ce97fe69c
+[2026-05-28 19:01:46Z INFO Worker] Culture: uk-UA
+[2026-05-28 19:01:46Z INFO Worker] UI Culture: uk-UA
+[2026-05-28 19:01:46Z INFO Worker] Waiting to receive the job message from the channel.
+[2026-05-28 19:01:46Z INFO ProcessChannel] Receiving message of length 24950, with hash '31469e483462038537271d6de573fd2b94b226e1da90abcf4edac0dfbedf0cd5'
+[2026-05-28 19:01:46Z INFO Worker] Message received.
+[2026-05-28 19:01:46Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/ci.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "contextName": "__actions_checkout",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 12,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 12,
+              "col": 11,
+              "lit": "fetch-depth"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 12,
+              "col": 24,
+              "lit": "0"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "99798f7b-5691-4483-a557-272737db8911",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/setup-python",
+        "ref": "v5",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 14,
+        "col": 15,
+        "lit": "Set up Python"
+      },
+      "contextName": "__actions_setup-python",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 17,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 11,
+              "lit": "python-version"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 27,
+              "lit": "3.12"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "6ce8d803-2c82-40af-91b8-514936f7050f",
+      "name": "__actions_setup-python"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 19,
+        "col": 15,
+        "lit": "Install Dependencies"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 20,
+              "col": 14,
+              "lit": "pip install qrcode pillow pytest pytest-cov opencv-python-headless pyzbar\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "54871a96-9336-4cb0-bc34-3fb8d68e3827",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 23,
+        "col": 15,
+        "lit": "Run Tests & Generate Metrics"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 24,
+              "col": 14,
+              "lit": "cd Refact_Project2 \npytest --cov=src --cov-report=xml:coverage.xml --junitxml=report.xml --cov-report=html:htmlcov\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "1ba494bd-0854-456a-89ed-de8c7ee8e37f",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "SonarSource/sonarqube-scan-action",
+        "ref": "v4.1.0",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 28,
+        "col": 15,
+        "lit": "SonarCloud Scan"
+      },
+      "contextName": "__SonarSource_sonarqube-scan-action",
+      "environment": {
+        "type": 2,
+        "file": 1,
+        "line": 31,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 31,
+              "col": 11,
+              "lit": "GITHUB_TOKEN"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 31,
+              "col": 25,
+              "expr": "secrets.GITHUB_TOKEN"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 32,
+              "col": 11,
+              "lit": "SONAR_TOKEN"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 32,
+              "col": 24,
+              "expr": "secrets.SONAR_TOKEN"
+            }
+          }
+        ]
+      },
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 34,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 34,
+              "col": 11,
+              "lit": "args"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 34,
+              "col": 17,
+              "lit": "-Dsonar.organization=shablenkoo -Dsonar.projectKey=shablenkoo_Refact_Project2 -Dsonar.python.coverage.reportPaths=coverage.xml -Dsonar.python.xunit.reportPath=report.xml\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "3f186470-6751-4411-bcdb-2de94a6bb376",
+      "name": "__SonarSource_sonarqube-scan-action"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/upload-artifact",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 40,
+        "col": 15,
+        "lit": "Upload Execution Artifacts"
+      },
+      "contextName": "__actions_upload-artifact",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 43,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 43,
+              "col": 11,
+              "lit": "name"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 43,
+              "col": 17,
+              "lit": "Quality-Execution-Results"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 44,
+              "col": 11,
+              "lit": "path"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 44,
+              "col": 17,
+              "lit": "htmlcov/\nreport.xml\ncoverage.xml"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "ecd682df-45f0-4425-8019-4c55a42e772e",
+      "name": "__actions_upload-artifact"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "SONAR_TOKEN": {
+      "value": "***",
+      "isSecret": true
+    },
+    "actions.runner.requirenode24": {
+      "value": "false"
+    },
+    "actions.runner.usenode24bydefault": {
+      "value": "false"
+    },
+    "actions.runner.warnonnode20": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "true"
+    },
+    "actions_batch_action_resolution": {
+      "value": "false"
+    },
+    "actions_container_action_runner_temp": {
+      "value": "true"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_runner_compare_workflow_parser": {
+      "value": "false"
+    },
+    "actions_runner_deprecate_linux_arm32": {
+      "value": "false"
+    },
+    "actions_runner_emit_composite_markers": {
+      "value": "false"
+    },
+    "actions_runner_kill_linux_arm32": {
+      "value": "false"
+    },
+    "actions_runner_node20_removal_date": {
+      "value": ""
+    },
+    "actions_runner_node24_default_date": {
+      "value": ""
+    },
+    "actions_service_container_command": {
+      "value": "true"
+    },
+    "actions_set_orchestration_id_env_for_actions": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_snapshot_preflight_hosted_runner_check": {
+      "value": "false"
+    },
+    "actions_snapshot_preflight_image_gen_pool_check": {
+      "value": "false"
+    },
+    "actions_use_bearer_token_for_codeload": {
+      "value": "false"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "build-and-test"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "65c081ff-34d3-453e-98fa-5e7b35be9cbd.build-and-test.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "build-and-test"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "65c081ff-34d3-453e-98fa-5e7b35be9cbd",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "65c081ff-34d3-453e-98fa-5e7b35be9cbd",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "6b5cf45d-9590-5cd2-9fe4-41afc23cf0d8",
+  "jobDisplayName": "build-and-test",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/2zbZ8p5HyVgYKDBnOcPTwAatHEHx6jTMsbiUttcEEUth2kXs5T/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/2zbZ8p5HyVgYKDBnOcPTwAatHEHx6jTMsbiUttcEEUth2kXs5T/",
+          "GenerateIdTokenUrl": "",
+          "ConnectivityChecks": "[\"https://broker.actions.githubusercontent.com/health\",\"https://token.actions.githubusercontent.com/ready\",\"https://run.actions.githubusercontent.com/health\"]"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-1-azure-eastus.actions.githubusercontent.com/55/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "808c703e6195263555e51061b22c09ffd63b083c"
+        },
+        {
+          "k": "repository",
+          "v": "shablenkoo/Refact_Project2"
+        },
+        {
+          "k": "repository_owner",
+          "v": "shablenkoo"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "146392277"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/shablenkoo/Refact_Project2.git"
+        },
+        {
+          "k": "run_id",
+          "v": "26595927122"
+        },
+        {
+          "k": "run_number",
+          "v": "2"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "146392277"
+        },
+        {
+          "k": "actor",
+          "v": "shablenkoo"
+        },
+        {
+          "k": "workflow",
+          "v": "Enterprise Quality Gate"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "808c703e6195263555e51061b22c09ffd63b083c"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "39b9ad99f6c8569fe59c9588ec5c2248d8d145fd"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "shablenkoo@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Alina"
+                              },
+                              {
+                                "k": "username",
+                                "v": "shablenkoo"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "shablenkoo@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Alina"
+                              },
+                              {
+                                "k": "username",
+                                "v": "shablenkoo"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "808c703e6195263555e51061b22c09ffd63b083c"
+                        },
+                        {
+                          "k": "message",
+                          "v": "🚀 Final fix: Unified repo, move workflows to root, ignore runner"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2026-05-28T22:00:24+03:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "13fa6f9f167ea51c0b25e4b188467b571c3eed60"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/shablenkoo/Refact_Project2/commit/808c703e6195263555e51061b22c09ffd63b083c"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/shablenkoo/Refact_Project2/compare/39b9ad99f6c8...808c703e6195"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "shablenkoo@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Alina"
+                          },
+                          {
+                            "k": "username",
+                            "v": "shablenkoo"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "shablenkoo@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Alina"
+                          },
+                          {
+                            "k": "username",
+                            "v": "shablenkoo"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "808c703e6195263555e51061b22c09ffd63b083c"
+                    },
+                    {
+                      "k": "message",
+                      "v": "🚀 Final fix: Unified repo, move workflows to root, ignore runner"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2026-05-28T22:00:24+03:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "13fa6f9f167ea51c0b25e4b188467b571c3eed60"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/shablenkoo/Refact_Project2/commit/808c703e6195263555e51061b22c09ffd63b083c"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "146392277+shablenkoo@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "shablenkoo"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/shablenkoo/Refact_Project2.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1779014779.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "shablenkoo/Refact_Project2"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/shablenkoo/Refact_Project2.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pull_requests",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/shablenkoo/Refact_Project2"
+                    },
+                    {
+                      "k": "id",
+                      "v": 1241400947.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "Python"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "Refact_Project2"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOSf5Gcw"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/146392277?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "146392277+shablenkoo@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/shablenkoo/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/shablenkoo/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/shablenkoo/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/shablenkoo/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/shablenkoo"
+                          },
+                          {
+                            "k": "id",
+                            "v": 146392277.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "shablenkoo"
+                          },
+                          {
+                            "k": "name",
+                            "v": "shablenkoo"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOCLnE1Q"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/shablenkoo/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/shablenkoo/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/shablenkoo/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/shablenkoo/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/shablenkoo/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/shablenkoo"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pull_request_creation_policy",
+                      "v": "all"
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1779994899.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 11.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:shablenkoo/Refact_Project2.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/shablenkoo/Refact_Project2"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2026-05-28T18:48:48Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/shablenkoo/Refact_Project2"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/146392277?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/shablenkoo/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/shablenkoo/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/shablenkoo/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/shablenkoo/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/shablenkoo"
+                    },
+                    {
+                      "k": "id",
+                      "v": 146392277.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "shablenkoo"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOCLnE1Q"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/shablenkoo/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/shablenkoo/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/shablenkoo/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/shablenkoo/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/shablenkoo/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/shablenkoo"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "shablenkoo/Refact_Project2/.github/workflows/ci.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "808c703e6195263555e51061b22c09ffd63b083c"
+        },
+        {
+          "k": "repository_id",
+          "v": "1241400947"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "shablenkoo"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "job": {
+      "t": 2,
+      "d": [
+        {
+          "k": "check_run_id",
+          "v": 78366664731.0
+        },
+        {
+          "k": "workflow_ref",
+          "v": "shablenkoo/Refact_Project2/.github/workflows/ci.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "808c703e6195263555e51061b22c09ffd63b083c"
+        },
+        {
+          "k": "workflow_repository",
+          "v": "shablenkoo/Refact_Project2"
+        },
+        {
+          "k": "workflow_file_path",
+          "v": ".github/workflows/ci.yml"
+        }
+      ]
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOCLnE1Q"
+}
+[2026-05-28 19:01:46Z INFO JobRunner] Job ID 6b5cf45d-9590-5cd2-9fe4-41afc23cf0d8
+[2026-05-28 19:01:46Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin\Runner.Worker.dll
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO ConfigurationStore] binPath: C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO ConfigurationStore] RootFolder: C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.runner'
+[2026-05-28 19:01:46Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.runner
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.runner_migrated'
+[2026-05-28 19:01:46Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.runner_migrated
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.credentials'
+[2026-05-28 19:01:46Z INFO ConfigurationStore] CredFilePath: C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.credentials
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.credentials_migrated'
+[2026-05-28 19:01:46Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.credentials_migrated
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known config file 'Service': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.service'
+[2026-05-28 19:01:46Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.service
+[2026-05-28 19:01:46Z INFO ConfigurationStore] Read setting file: 406 chars
+[2026-05-28 19:01:46Z INFO JobRunner] Initializing launch client
+[2026-05-28 19:01:46Z INFO JobServerQueue] Initializing results client
+[2026-05-28 19:01:46Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2026-05-28 19:01:46Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2026-05-28 19:01:46Z INFO JobServerQueue] Start process web console line queue.
+[2026-05-28 19:01:46Z INFO JobServerQueue] Start process file upload queue.
+[2026-05-28 19:01:46Z INFO JobServerQueue] Start results file upload queue.
+[2026-05-28 19:01:46Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-05-28 19:01:46Z INFO JobServerQueue] Start process timeline update queue.
+[2026-05-28 19:01:46Z INFO ExecutionContext] Initializing Job context
+[2026-05-28 19:01:46Z INFO ExecutionContext] Initialize GitHub context
+[2026-05-28 19:01:46Z INFO ExecutionContext] Initialize Env context
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_diag'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_diag'
+[2026-05-28 19:01:46Z INFO JobRunner] Starting the job execution context.
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:46Z INFO JobRunner] Validating directory permissions for: 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Tools': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_tool'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_temp'
+[2026-05-28 19:01:46Z INFO JobRunner] Getting job extension.
+[2026-05-28 19:01:46Z INFO JobRunner] Initialize job. Getting all job steps.
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_diag'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_diag'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.credentials'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\.setup_info'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:46Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_PipelineMapping\shablenkoo/Refact_Project2\PipelineFolder.json
+[2026-05-28 19:01:46Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:46Z INFO PipelineDirectoryManager] Creating pipeline directory.
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:46Z INFO PipelineDirectoryManager] Creating workspace directory.
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:46Z INFO JobExtension] Downloading actions
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:46Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:46Z INFO Worker] Listening for cancel message from the channel.
+[2026-05-28 19:01:46Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2026-05-28 19:01:47Z INFO ResultServer] Successfully started websocket client.
+[2026-05-28 19:01:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cbcb48ee-3cfc-480a-99a7-2e9a1f97e1f3', success rate: 1/1.
+[2026-05-28 19:01:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:47Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:47Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:47Z INFO ActionManager] Save archive 'https://codeload.github.com/actions/checkout/zip/34e114876b0b11c390a56381ad16ebd13914f8d5' into C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions\_temp_5d07d5c7-3ada-4238-921c-9a350db8c975\2485e8ca-ea97-415f-b57a-394fe108542a.zip.
+[2026-05-28 19:01:47Z INFO ActionManager] Using Basic token for action archive download.
+[2026-05-28 19:01:47Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2026-05-28 19:01:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cbcb48ee-3cfc-480a-99a7-2e9a1f97e1f3', success rate: 1/1.
+[2026-05-28 19:01:48Z INFO ActionManager] Request URL: https://codeload.github.com/actions/checkout/zip/34e114876b0b11c390a56381ad16ebd13914f8d5 X-GitHub-Request-Id: CDFB:2ACA3E:549CA6:61F993:6A18911D Http Status: OK
+[2026-05-28 19:01:48Z INFO ActionManager] Finished getting action repository.
+[2026-05-28 19:01:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:48Z INFO ActionManager] Save archive 'https://codeload.github.com/actions/setup-python/zip/a26af69be951a213d495a4c3e4e4022e16d87065' into C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions\_temp_fc572a97-8be4-450b-9c76-16256ce0d64b\c9ab6379-9fdf-453f-bb03-beeced291b12.zip.
+[2026-05-28 19:01:48Z INFO ActionManager] Using Basic token for action archive download.
+[2026-05-28 19:01:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cbcb48ee-3cfc-480a-99a7-2e9a1f97e1f3', success rate: 1/1.
+[2026-05-28 19:01:49Z INFO ActionManager] Request URL: https://codeload.github.com/actions/setup-python/zip/a26af69be951a213d495a4c3e4e4022e16d87065 X-GitHub-Request-Id: CDFE:1F6BCB:54EF7F:6249CC:6A18911E Http Status: OK
+[2026-05-28 19:01:49Z INFO ActionManager] Finished getting action repository.
+[2026-05-28 19:01:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:49Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:49Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:49Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:49Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:49Z INFO ActionManager] Save archive 'https://codeload.github.com/SonarSource/sonarqube-scan-action/zip/1b442ee39ac3fa7c2acdd410208dcb2bcfaae6c4' into C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions\_temp_6d1a56c3-e286-470e-856a-12be9a9f8f9d\1ea9a2c8-ac1e-46d4-8e22-dd8cc1e9e644.zip.
+[2026-05-28 19:01:49Z INFO ActionManager] Using Basic token for action archive download.
+[2026-05-28 19:01:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cbcb48ee-3cfc-480a-99a7-2e9a1f97e1f3', success rate: 1/1.
+[2026-05-28 19:01:49Z INFO ActionManager] Request URL: https://codeload.github.com/SonarSource/sonarqube-scan-action/zip/1b442ee39ac3fa7c2acdd410208dcb2bcfaae6c4 X-GitHub-Request-Id: CDFF:224C22:541D60:617BB3:6A18911F Http Status: OK
+[2026-05-28 19:01:50Z INFO ActionManager] Finished getting action repository.
+[2026-05-28 19:01:50Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:50Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:50Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:50Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:50Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:50Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:50Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:50Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:50Z INFO ActionManager] Save archive 'https://codeload.github.com/actions/upload-artifact/zip/ea165f8d65b6e75b540449e92b4886f43607fa02' into C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions\_temp_0dccbdd9-e5de-4231-8048-f5f6a4c1c499\9be5487a-9c73-45b7-ad02-ee5be30bece0.zip.
+[2026-05-28 19:01:50Z INFO ActionManager] Using Basic token for action archive download.
+[2026-05-28 19:01:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cbcb48ee-3cfc-480a-99a7-2e9a1f97e1f3', success rate: 1/1.
+[2026-05-28 19:01:51Z INFO ActionManager] Request URL: https://codeload.github.com/actions/upload-artifact/zip/ea165f8d65b6e75b540449e92b4886f43607fa02 X-GitHub-Request-Id: CE00:1E8FAC:500B73:5D6A00:6A18911F Http Status: OK
+[2026-05-28 19:01:52Z INFO ActionManager] Finished getting action repository.
+[2026-05-28 19:01:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:52Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:52Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:52Z INFO ActionManifestManagerLegacy] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-05-28 19:01:52Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-05-28 19:01:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:52Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:52Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:52Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:53Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-05-28 19:01:53Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:53Z INFO ActionManager] Load action that reference repository from 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions\actions\checkout\v4'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:53Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-05-28 19:01:53Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-05-28 19:01:53Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-05-28 19:01:53Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:53Z INFO ActionManifestManagerLegacy] Ignore action property author.
+[2026-05-28 19:01:53Z INFO ActionManifestManagerLegacy] Ignore action property branding.
+[2026-05-28 19:01:53Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Setup Python",
+  "description": "Set up a specific version of Python and add the command-line tools to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 6,
+          "col": 3,
+          "lit": "python-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "python-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 13,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 15,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 18,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 20,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 23,
+          "col": 3,
+          "lit": "update-environment"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 25,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "allow-prereleases"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 28,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 29,
+          "col": 3,
+          "lit": "freethreaded"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 31,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-05-28 19:01:53Z INFO ActionManager] Action node.js file: dist/setup/index.js, no more preparation.
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:53Z INFO ActionManager] Load action that reference repository from 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions\actions\setup-python\v5'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:53Z INFO ActionManifestManagerLegacy] Ignore action property author.
+[2026-05-28 19:01:53Z INFO ActionManifestManagerLegacy] Ignore action property branding.
+[2026-05-28 19:01:53Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Setup Python",
+  "description": "Set up a specific version of Python and add the command-line tools to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 6,
+          "col": 3,
+          "lit": "python-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "python-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 13,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 15,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 18,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 20,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 23,
+          "col": 3,
+          "lit": "update-environment"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 25,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "allow-prereleases"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 28,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 29,
+          "col": 3,
+          "lit": "freethreaded"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 31,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-05-28 19:01:53Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-05-28 19:01:53Z INFO ActionManager] Action node.js file: dist/setup/index.js.
+[2026-05-28 19:01:53Z INFO ActionManager] Action post node.js file: dist/cache-save/index.js.
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Work': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work'
+[2026-05-28 19:01:53Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_actions'
+[2026-05-28 19:01:53Z INFO ActionManifestManagerLegacy] Ignore action property branding.
+[2026-05-28 19:01:53Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Official SonarQube (Server, Cloud) Scan",
+  "description": "Scan your code with SonarQube Server and Cloud to detect coding  issues in 30+ languages, frameworks, and IaC platforms.  The solution also provides fix recommendations leveraging AI with  Sonar's AI CodeFix capability. (Formerly SonarQube and SonarCloud)\n",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 11,
+          "col": 3,
+          "lit": "args"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 14,
+          "col": 3,
+          "lit": "projectBaseDir"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 17,
+          "col": 3,
+          "lit": "scannerVersion"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 20,
+          "col": 14,
+          "lit": "6.2.1.4610"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 21,
+          "col": 3,
+          "lit": "scannerBinariesUrl"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 24,
+          "col": 14,
+          "lit": "https://binaries.sonarsource.com/Distribution/sonar-scanner-cli"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "composite",
+    "hasPre": false,
+    "hasPost": false,
+    "preSteps": [],
+    "steps": [
+      {
+        "type": "action",
+        "reference": {
+          "type": "script"
+        },
+        "displayNameToken": {
+          "type": 0,
+          "file": 4,
+          "line": 28,
+          "col": 13,
+          "lit": "Sanity checks"
+        },
+        "contextName": "__run",
+        "environment": {
+          "type": 2,
+          "file": 4,
+          "line": 32,
+          "col": 9,
+          "map": [
+            {
+              "key": {
+                "type": 0,
+                "file": 4,
+                "line": 32,
+                "col": 9,
+                "lit": "INPUT_PROJECTBASEDIR"
+              },
+              "value": {
+                "type": 3,
+                "file": 4,
+                "line": 32,
+                "col": 31,
+                "expr": "inputs.projectBaseDir"
+              }
+            }
+          ]
+        },
+        "inputs": {
+          "type": 2,
+          "map": [
+            {
+              "key": "script",
+              "value": {
+                "type": 0,
+                "file": 4,
+                "line": 29,
+                "col": 12,
+                "lit": "${GITHUB_ACTION_PATH}/sanity-checks.sh"
+              }
+            },
+            {
+              "key": "shell",
+              "value": {
+                "type": 0,
+                "file": 4,
+                "line": 30,
+                "col": 14,
+                "lit": "bash"
+              }
+            }
+          ]
+        },
+        "condition": "success()"
+      },
+      {
+        "type": "action",
+        "reference": {
+          "type": "repository",
+          "name": "actions/cache",
+          "ref": "v4.0.2",
+          "repositoryType": "GitHub",
+          "path": ""
+        },
+        "displayNameToken": {
+          "type": 0,
+          "file": 4,
+          "line": 33,
+          "col": 13,
+          "lit": "Load Sonar Scanner CLI from cache"
+        },
+        "contextName": "sonar-scanner-cli",
+        "inputs": {
+          "type": 2,
+          "file": 4,
+          "line": 37,
+          "col": 9,
+          "map": [
+            {
+              "key": {
+                "type": 0,
+                "file": 4,
+                "line": 37,
+                "col": 9,
+                "lit": "path"
+              },
+              "value": {
+                "type": 3,
+                "file": 4,
+                "line": 37,
+                "col": 15,
+                "expr": "format('{0}/sonar-scanner-cli-{1}-{2}-{3}', runner.temp, inputs.scannerVersion, runner.os, runner.arch)"
+              }
+            },
+            {
+              "key": {
+                "type": 0,
+                "file": 4,
+                "line": 38,
+                "col": 9,
+                "lit": "key"
+              },
+              "value": {
+                "type": 3,
+                "file": 4,
+                "line": 38,
+                "col": 14,
+                "expr": "format('sonar-scanner-cli-{0}-{1}-{2}', inputs.scannerVersion, runner.os, runner.arch)"
+              }
+            }
+          ]
+        },
+        "condition": "success()"
+      },
+      {
+        "type": "action",
+        "reference": {
+          "type": "script"
+        },
+        "displayNameToken": {
+          "type": 0,
+          "file": 4,
+          "line": 39,
+          "col": 13,
+          "lit": "Install Sonar Scanner CLI"
+        },
+        "contextName": "__run_2",
+        "environment": {
+          "type": 2,
+          "file": 4,
+          "line": 44,
+          "col": 9,
+          "map": [
+            {
+              "key": {
+                "type": 0,
+                "file": 4,
+                "line": 44,
+                "col": 9,
+                "lit": "INPUT_SCANNERVERSION"
+              },
+              "value": {
+                "type": 3,
+                "file": 4,
+                "line": 44,
+                "col": 31,
+                "expr": "inputs.scannerVersion"
+              }
+            },
+            {
+              "key": {
+                "type": 0,
+                "file": 4,
+                "line": 45,
+                "col": 9,
+                "lit": "INPUT_SCANNERBINARIESURL"
+              },
+              "value": {
+                "type": 3,
+                "file": 4,
+                "line": 45,
+                "col": 35,
+                "expr": "inputs.scannerBinariesUrl"
+              }
+            }
+          ]
+        },
+        "inputs": {
+          "type": 2,
+          "map": [
+            {
+              "key": "script",
+              "value": {
+                "type": 0,
+                "file": 4,
+                "line": 41,
+                "col": 12,
+                "lit": "${GITHUB_ACTION_PATH}/install-sonar-scanner-cli.sh"
+              }
+            },
+            {
+              "key": "shell",
+              "value": {
+                "type": 0,
+                "file": 4,
+                "line": 42,
+                "col": 14,
+                "lit": "bash"
+              }
+            }
+          ]
+        },
+        "condition": "success() && (env.NO_CACHE == 'true' || steps.sonar-scanner-cli.outputs.cache-hit != 'true')"
+      },
+      {
+        "type": "action",
+        "reference": {
+          "type": "script"
+        },
+        "displayNameToken": {
+          "type": 0,
+          "file": 4,
+          "line": 46,
+          "col": 13,
+          "lit": "Add SonarScanner CLI to the PATH"
+        },
+        "contextName": "__run_3",
+        "inputs": {
+          "type": 2,
+          "map": [
+            {
+              "key": "script",
+              "value": {
+                "type": 3,
+                "file": 4,
+                "line": 47,
+                "col": 12,
+                "expr": "format('echo \"${{RUNNER_TEMP}}/sonar-scanner-cli-{0}-{1}-{2}/bin\" >> $GITHUB_PATH', inputs.scannerVersion, runner.os, runner.arch)"
+              }
+            },
+            {
+              "key": "shell",
+              "value": {
+                "type": 0,
+                "file": 4,
+                "line": 48,
+                "col": 14,
+                "lit": "bash"
+              }
+            }
+          ]
+        },
+        "condition": "success()"
+      },
+      {
+        "type": "action",
+        "reference": {
+          "type": "script"
+        },
+        "displayNameToken": {
+          "type": 0,
+          "file": 4,
+          "line": 49,
+          "col": 13,
+          "lit": "Run SonarScanner"
+        },
+        "contextName": "__run_4",
+        "environment": {
+          "type": 2,
+          "file": 4,
+          "line": 53,
+          "col": 9,
+          "map": [
+            {
+              "key": {
+                "type": 0,
+                "file": 4,
+                "line": 53,
+                "col": 9,
+                "lit": "INPUT_PROJECTBASEDIR"
+              },
+              "value": {
+                "type": 3,
+                "file": 4,
+                "line": 53,
+                "col": 31,
+                "expr": "inputs.projectBaseDir"
+              }
+            },
+            {
+              "key": {
+                "type": 0,
+                "file": 4,
+                "line": 54,
+                "col": 9,
+                "lit": "SONAR_SCANNER_JRE"
+              },
+              "value": {
+                "type": 3,
+                "file": 4,
+                "line": 54,
+                "col": 28,
+                "expr": "format('{0}/sonar-scanner-cli-{1}-{2}-{3}/jre', runner.temp, inputs.scannerVersion, runner.os, runner.arch)"
+              }
+            }
+          ]
+        },
+        "inputs": {
+          "type": 2,
+          "map": [
+            {
+              "key": "script",
+              "value": {
+                "type": 3,
+                "file": 4,
+                "line": 50,
+                "col": 12,
+                "expr": "format('${{GITHUB_ACTION_PATH}}/run-sonar-scanner.sh {0}', inputs.args)"
+              }
+            },
+            {
+              "key": "shell",
+              "value": {
+                "type": 0,
+                "file": 4,
+                "line": 51,
+                "col": 14,
+                "lit": "bash"
+              }
+            }
+          ]
+        },
+        "condition": "success()"
+      }
+    ],
+    "postSteps": [],
+    "outputs": null,
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-05-28 19:01:53Z INFO ActionManager] Loading Composite steps
+[2026-05-28 19:01:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cbcb48ee-3cfc-480a-99a7-2e9a1f97e1f3', success rate: 1/1.
+[2026-05-28 19:01:53Z ERR  GitHubActionsService] POST request to https://launch.actions.githubusercontent.com/actions/build/65c081ff-34d3-453e-98fa-5e7b35be9cbd/jobs/6b5cf45d-9590-5cd2-9fe4-41afc23cf0d8/runnerresolve/actions failed. HTTP Status: UnprocessableEntity
+[2026-05-28 19:01:53Z ERR  JobExtension] Caught exception from JobExtension Initialization: GitHub.DistributedTask.WebApi.UnresolvableActionDownloadInfoException: This request has been automatically failed because it uses a deprecated version of `actions/cache: v4.0.2`. Please update your workflow to use v3/v4 of actions/cache to avoid interruptions. Learn more: https://github.blog/changelog/2024-12-05-notice-of-upcoming-releases-and-breaking-changes-for-github-actions/#actions-cache-v1-v2-and-actions-toolkit-cache-package-closing-down
+   at GitHub.Services.Launch.Client.LaunchHttpClient.GetResolveActionsDownloadInfoAsyncV2(Guid planId, Guid jobId, ActionReferenceList actionReferenceList, CancellationToken cancellationToken)
+   at GitHub.Runner.Worker.ActionManager.GetDownloadInfoAsync(IExecutionContext executionContext, List`1 actions)
+   at GitHub.Runner.Worker.ActionManager.GetDownloadInfoAsync(IExecutionContext executionContext, List`1 actions)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveLegacyAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveLegacyAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps, Guid rootStepId)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+[2026-05-28 19:01:53Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "cbcb48ee-3cfc-480a-99a7-2e9a1f97e1f3",
+  "result": "failed",
+  "errorMessages": [
+    "This request has been automatically failed because it uses a deprecated version of `actions/cache: v4.0.2`. Please update your workflow to use v3/v4 of actions/cache to avoid interruptions. Learn more: https://github.blog/changelog/2024-12-05-notice-of-upc"
+  ],
+  "executionTimeInSeconds": 7,
+  "startTime": "2026-05-28T19:01:46.6845764Z",
+  "finishTime": "2026-05-28T19:01:53.6334544Z"
+}.
+[2026-05-28 19:01:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cbcb48ee-3cfc-480a-99a7-2e9a1f97e1f3', success rate: 1/1.
+[2026-05-28 19:01:53Z ERR  JobRunner] Job initialize failed.
+[2026-05-28 19:01:53Z ERR  JobRunner] Caught exception from InitializeJob: GitHub.DistributedTask.WebApi.UnresolvableActionDownloadInfoException: This request has been automatically failed because it uses a deprecated version of `actions/cache: v4.0.2`. Please update your workflow to use v3/v4 of actions/cache to avoid interruptions. Learn more: https://github.blog/changelog/2024-12-05-notice-of-upcoming-releases-and-breaking-changes-for-github-actions/#actions-cache-v1-v2-and-actions-toolkit-cache-package-closing-down
+   at GitHub.Services.Launch.Client.LaunchHttpClient.GetResolveActionsDownloadInfoAsyncV2(Guid planId, Guid jobId, ActionReferenceList actionReferenceList, CancellationToken cancellationToken)
+   at GitHub.Runner.Worker.ActionManager.GetDownloadInfoAsync(IExecutionContext executionContext, List`1 actions)
+   at GitHub.Runner.Worker.ActionManager.GetDownloadInfoAsync(IExecutionContext executionContext, List`1 actions)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveLegacyAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveLegacyAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps, Guid rootStepId)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+   at GitHub.Runner.Worker.JobRunner.RunAsync(AgentJobRequestMessage message, CancellationToken jobRequestCancellationToken)
+[2026-05-28 19:01:53Z INFO JobRunner] Shutting down the job server queue.
+[2026-05-28 19:01:53Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2026-05-28 19:01:53Z INFO JobServerQueue] All queue process task stopped.
+[2026-05-28 19:01:53Z INFO JobServerQueue] Web console line queue drained.
+[2026-05-28 19:01:53Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2026-05-28 19:01:53Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2026-05-28 19:01:53Z INFO JobServerQueue] File upload queue drained.
+[2026-05-28 19:01:53Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-05-28 19:01:53Z INFO JobServerQueue] Uploading 2 file(s) in one shot through results service.
+[2026-05-28 19:01:53Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-05-28 19:01:53Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_diag\blocks\65c081ff-34d3-453e-98fa-5e7b35be9cbd_cbcb48ee-3cfc-480a-99a7-2e9a1f97e1f3.1
+[2026-05-28 19:01:54Z INFO JobServerQueue] Got a job log file to send to results service.
+[2026-05-28 19:01:54Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_diag\blocks\65c081ff-34d3-453e-98fa-5e7b35be9cbd_6b5cf45d-9590-5cd2-9fe4-41afc23cf0d8.1
+[2026-05-28 19:01:55Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2026-05-28 19:01:55Z INFO JobServerQueue] Results upload queue drained.
+[2026-05-28 19:01:55Z INFO JobServerQueue] Timeline update queue drained.
+[2026-05-28 19:01:55Z INFO JobServerQueue] Disposing job server ...
+[2026-05-28 19:01:55Z INFO JobServerQueue] Disposing results server ...
+[2026-05-28 19:01:55Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2026-05-28 19:01:55Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_work\_temp
+[2026-05-28 19:01:55Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\bin'
+[2026-05-28 19:01:55Z INFO HostContext] Well known directory 'Root': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner'
+[2026-05-28 19:01:55Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_diag'
+[2026-05-28 19:01:55Z INFO HostContext] Well known config file 'Telemetry': 'C:\Users\Alina\PycharmProjects\Refact_Project2\actions-runner\_diag\.telemetry'
+[2026-05-28 19:01:55Z INFO JobRunner] Raising job completed against run service
+[2026-05-28 19:01:56Z INFO Worker] Job completed.
